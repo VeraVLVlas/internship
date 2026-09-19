@@ -1,0 +1,27 @@
+{
+  "name": "internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node \"./учебная_практика_14.09.2026/Наполнение интерфейса, отладка и стресс-тестирование/server.js\"",
+    "stress": "node \"./учебная_практика_14.09.2026/Наполнение интерфейса, отладка и стресс-тестирование/stress-test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeraVLVlas/internship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/VeraVLVlas/internship/issues"
+  },
+  "homepage": "https://github.com/VeraVLVlas/internship#readme",
+  "dependencies": {
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}

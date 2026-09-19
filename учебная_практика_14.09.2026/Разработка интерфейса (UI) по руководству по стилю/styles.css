@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: #0b1d3a;
+  background-color: #f6f8fb;
+}
+
+.crm {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #d8dee8;
+  border-radius: 12px;
+}
+
+.crm__header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.crm__logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.crm__title {
+  margin: 0;
+  font-size: 26px;
+}
+
+.crm__subtitle {
+  margin: 6px 0 0;
+  color: #788397;
+}
+
+.primary-button {
+  margin-left: auto;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #1677ff;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #0868e5;
+}
+
+.status {
+  color: #788397;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partner-card {
+  padding: 20px 24px;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.partner-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.partner-card__name {
+  margin: 0;
+  font-size: 20px;
+}
+
+.partner-card__discount {
+  margin: 0;
+  font-size: 24px;
+}
+
+.partner-card__info {
+  margin-top: 10px;
+  color: #5d687a;
+}
+
+.partner-card__info p {
+  margin: 4px 0;
+}

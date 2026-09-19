@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CRM: Список партнеров и скидок</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./resources/app-icon.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+</head>
+
+<body>
+  <main class="crm">
+    <header class="crm__header">
+      <img
+        class="crm__logo"
+        src="./resources/logo.png"
+        alt="Nexora"
+      >
+
+      <div>
+        <h1 class="crm__title">
+          CRM: Список партнеров и скидок
+        </h1>
+
+        <p class="crm__subtitle">
+          Управление партнерами компании
+        </p>
+      </div>
+
+      <button
+        class="primary-button"
+        type="button"
+        id="refresh-button"
+      >
+        Обновить список
+      </button>
+    </header>
+
+    <p
+      id="status"
+      class="status"
+    ></p>
+
+    <section
+      id="partners-list"
+      class="partners-list"
+    ></section>
+  </main>
+
+  <script
+    type="module"
+    src="./app.js"
+  ></script>
+</body>
+</html>
