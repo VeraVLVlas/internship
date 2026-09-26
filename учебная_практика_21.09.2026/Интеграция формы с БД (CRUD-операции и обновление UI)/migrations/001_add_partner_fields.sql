@@ -1,0 +1,4 @@
+ALTER TABLE partners
+ADD COLUMN partner_type VARCHAR(20),
+ADD COLUMN address VARCHAR(255),
+ADD COLUMN director VARCHAR(255);
