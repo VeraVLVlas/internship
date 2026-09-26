@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRM: Карточка партнера [Добавление]</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./resources/app-icon.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+</head>
+
+<body>
+  <main class="crm">
+    <header class="crm__header">
+      <img
+        class="crm__logo"
+        src="./resources/logo.png"
+        alt="Логотип компании"
+      >
+
+      <div class="crm__heading">
+        <h1 class="crm__title">
+          Карточка партнера
+        </h1>
+
+        <p class="crm__subtitle">
+          Добавление нового партнера
+        </p>
+      </div>
+    </header>
+
+    <section class="partner-edit">
+      <div class="partner-edit__placeholder">
+        Форма партнера будет размещена здесь, при выполнении следующего шага
+      </div>
+
+      <div class="partner-edit__actions">
+        <button
+          id="back-button"
+          class="button button--secondary"
+          type="button"
+        >
+          Назад
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="./partner-edit.js"
+  ></script>
+</body>
+</html>
