@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node \"./учебная_практика_21.09.2026/Обработка исключений и интерактивные уведомления (UX UI)/server.js\"",
-    "stress": "node \"./учебная_практика_14.09.2026/Наполнение интерфейса, отладка и стресс-тестирование/stress-test.js\""
+    "start": "node \"./учебная_практика_28.09.2026/Модульное тестирование (Unit Testing) и аудит безопасности/server.js\"",
+    "stress": "node \"./учебная_практика_14.09.2026/Наполнение интерфейса, отладка и стресс-тестирование/stress-test.js\"",
+    "test":  "node --test \"./учебная_практика_28.09.2026/Модульное тестирование (Unit Testing) и аудит безопасности/calculateMaterialRequirement.test.js\"",
+    "test-coverage": "node --test --experimental-test-coverage \"./учебная_практика_28.09.2026/Модульное тестирование (Unit Testing) и аудит безопасности/calculateMaterialRequirement.test.js\""
   },
   "repository": {
     "type": "git",

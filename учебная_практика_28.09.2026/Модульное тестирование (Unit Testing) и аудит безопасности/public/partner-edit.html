@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRM: Карточка партнера [Добавление]</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./resources/app-icon.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+</head>
+
+<body>
+  <main class="crm">
+    <header class="crm__header">
+      <a href="/">
+        <img
+          class="crm__logo"
+          src="./resources/logo.png"
+          alt="Логотип компании"
+        >
+      </a>
+
+      <div class="crm__heading">
+        <h1
+          id="partner-form-title"
+          class="crm__title"
+        >
+          Карточка партнера
+        </h1>
+
+        <p
+          id="partner-form-subtitle"
+          class="crm__subtitle"
+        >
+          Добавление нового партнера
+        </p>
+      </div>
+    </header>
+
+    <section class="partner-edit">
+      <form
+        id="partner-form"
+        class="partner-form"
+      >
+        <div class="form-field">
+          <label for="company-name">
+            Наименование
+            <span class="required-mark">*</span>
+          </label>
+
+          <input
+            required
+            id="company-name"
+            name="companyName"
+            type="text"
+            placeholder="ООО «Название компании»"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="inn">
+            ИНН
+            <span class="required-mark">*</span>
+          </label>
+
+          <input
+            required
+            id="inn"
+            name="inn"
+            type="text"
+            placeholder="7700000000"
+          >
+          <span class="form-hint">
+            Введите от 10 до 12 цифр ИНН
+          </span>
+        </div>
+
+        <div class="form-field">
+          <label for="partner-type">
+            Тип партнера
+          </label>
+
+          <select
+            id="partner-type"
+            name="partnerType"
+          ></select>
+        </div>
+
+        <div class="form-field">
+          <label for="rating">
+            Рейтинг
+          </label>
+
+          <input
+            id="rating"
+            name="rating"
+            type="number"
+            min="0"
+            max="5"
+            step="1"
+            placeholder="0"
+          >
+          <span class="form-hint">
+            Рейтинг компании от 0 до 5
+          </span>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="address">
+            Адрес
+          </label>
+
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            placeholder="Введите адрес компании"
+          ></textarea>
+        </div>
+
+        <div class="form-field form-field--full">
+          <label for="director">
+            ФИО директора
+          </label>
+
+          <input
+            id="director"
+            name="director"
+            type="text"
+            placeholder="Иванов Иван Иванович"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="phone">
+            Телефон компании
+          </label>
+
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="+7 (999) 123-45-67"
+            title="Введите телефон в формате +7 (999) 123-45-67"
+          >
+
+          <span class="form-hint">
+            Например: +7 (999) 123-45-67
+          </span>
+        </div>
+
+        <div class="form-field">
+          <label for="email">
+            Email компании
+            <span class="required-mark">*</span>
+          </label>
+
+          <input
+            required
+            id="email"
+            name="email"
+            type="email"
+            placeholder="company@example.com"
+            title="Введите email в формате company@example.com"
+          >
+
+          <span class="form-hint">
+            Например: company@example.com
+          </span>
+        </div>
+
+        <p class="form-required-note">
+          <span class="required-mark">*</span>
+          <span>- обязательное поле</span>
+        </p>
+
+        <div class="partner-edit__actions form-field--full">
+          <button
+            id="back-button"
+            class="button button--secondary"
+            type="button"
+          >
+            Назад
+          </button>
+
+          <button
+            id="save-button"
+            class="button button--primary"
+            type="submit"
+          >
+            Сохранить
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <dialog
+    id="message-box"
+    class="message-box"
+  >
+    <div class="message-box__header">
+      <span
+        id="message-box-icon"
+        class="message-box__icon"
+      ></span>
+
+      <h2
+        id="message-box-title"
+        class="message-box__title"
+      ></h2>
+    </div>
+
+    <p
+      id="message-box-text"
+      class="message-box__text"
+    ></p>
+
+    <div
+      id="message-box-actions"
+      class="message-box__actions"
+    ></div>
+  </dialog>
+
+  <script
+    type="module"
+    src="./partner-edit.js"
+  ></script>
+</body>
+</html>

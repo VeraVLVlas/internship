@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CRM: История реализации продукции</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./resources/app-icon.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+</head>
+
+<body>
+  <main class="crm">
+    <header class="crm__header">
+      <img
+        class="crm__logo"
+        src="./resources/logo.png"
+        alt="Логотип компании"
+      >
+
+      <div class="crm__heading">
+        <h1 class="crm__title">
+          История реализации продукции
+        </h1>
+
+        <p
+          id="partner-name"
+          class="crm__subtitle"
+        >
+          Загрузка данных...
+        </p>
+      </div>
+    </header>
+
+    <section class="history">
+      <div class="history__table-wrapper">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th>Наименование продукции</th>
+              <th>Количество (шт.)</th>
+              <th>Дата продажи</th>
+            </tr>
+          </thead>
+
+          <tbody id="history-body"></tbody>
+        </table>
+
+        <p
+          id="empty-history"
+          class="history__empty"
+          hidden
+        >
+          У партнера пока нет истории продаж.
+        </p>
+      </div>
+
+      <div class="partner-edit__actions">
+        <button
+          id="back-button"
+          class="button button--secondary"
+          type="button"
+        >
+          Назад
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="./partner-history.js"
+  ></script>
+</body>
+</html>
